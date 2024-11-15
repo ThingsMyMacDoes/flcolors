@@ -68,7 +68,7 @@ function setTextColor(color) {
         body.style.color = '#007000'; // Green
         break;
       case 'color5':
-        body.style.color = '#c500db'; // Purple
+        body.style.color = '#ff5cb3'; // Purple
         break;
       case 'color6':
         body.style.color = '#d10070'; // Pink
@@ -77,22 +77,22 @@ function setTextColor(color) {
   } else { // dark theme
     switch(color) {
       case 'color1':
-        body.style.color = '#ff4c4c'; // Lighter Red
+        body.style.color = '#ffff00'; // Lighter Red
         break;
       case 'color2':
-        body.style.color = '#ff8c42'; // Lighter Orange
+        body.style.color = '#00ffff'; // Lighter Orange
         break;
       case 'color3':
-        body.style.color = '#f5e342'; // Yellow
+        body.style.color = '#d3d3d3'; // Yellow
         break;
       case 'color4':
-        body.style.color = '#4caf50'; // Light Green
+        body.style.color = '#00ff00'; // Light Green
         break;
       case 'color5':
         body.style.color = '#42a5f5'; // Light Blue
         break;
       case 'color6':
-        body.style.color = '#9e9e9e'; // Light Gray
+        body.style.color = '#ffa500'; // Light Gray
         break;
     }
   }
