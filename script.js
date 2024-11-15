@@ -89,7 +89,7 @@ function setTextColor(color) {
         body.style.color = '#00ff00'; // Light Green
         break;
       case 'color5':
-        body.style.color = '#42a5f5'; // Light Blue
+        body.style.color = '#ff5cb3'; // Light Blue
         break;
       case 'color6':
         body.style.color = '#ffa500'; // Light Gray
