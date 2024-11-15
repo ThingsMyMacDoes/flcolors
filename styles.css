@@ -1,15 +1,17 @@
 body {
-  background-color: #1e1e1e; /* Dark background */
-  color: #ffffff; /* White text color */
+  background-color: #1e1e1e; /* Default dark background */
+  color: #ffffff; /* Default white text color */
   font-family: Arial, sans-serif;
   margin: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
 }
 
 .setting-container {
-  background-color: #2c2c2c; /* Darker background for containers */
+  background-color: #2c2c2c; /* Default dark background for containers */
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px; /* Space between containers */
+  transition: background-color 0.3s; /* Smooth transition for theme change */
 }
 
 .setting-header {
@@ -27,10 +29,10 @@ body {
   align-items: center;
 }
 
-.setting-option input[type="checkbox"] {
+.setting-option input[type="radio"] {
   margin-right: 10px;
 }
 
 .setting-option label {
-  color: #ffffff;
+  color: inherit; /* Inherit text color based on theme */
 }
