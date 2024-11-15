@@ -9,7 +9,7 @@ body {
 .setting-container {
   background-color: #1e1e1e; /* Default dark background for containers */
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 0px;
   margin-bottom: 20px; /* Space between containers */
   transition: background-color 0.3s; /* Smooth transition for theme change */
 }
