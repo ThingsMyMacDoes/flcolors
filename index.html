@@ -11,10 +11,10 @@
     <div class="setting-header">Color Themes</div>
     <div class="setting-options-row">
       <label class="setting-option">
-        <input type="checkbox"> Light Theme
+        <input type="radio" name="theme" value="light" onclick="changeTheme('light')"> Light Theme
       </label>
       <label class="setting-option">
-        <input type="checkbox"> Dark Theme
+        <input type="radio" name="theme" value="dark" onclick="changeTheme('dark')"> Dark Theme
       </label>
     </div>
   </div>
@@ -22,29 +22,31 @@
   <div class="setting-container">
     <div class="setting-header">High Contrast</div>
     <label class="setting-option">
-      <input type="checkbox"> Light Theme
+      <input type="checkbox"> Enable High Contrast
     </label>
   </div>
   
   <div class="setting-container">
     <div class="setting-header">cb1</div>
     <label class="setting-option">
-      <input type="checkbox"> Light Theme
+      <input type="checkbox"> Enable cb1
     </label>
   </div>
   
   <div class="setting-container">
     <div class="setting-header">cb2</div>
     <label class="setting-option">
-      <input type="checkbox"> Light Theme
+      <input type="checkbox"> Enable cb2
     </label>
   </div>
   
   <div class="setting-container">
     <div class="setting-header">cb3</div>
     <label class="setting-option">
-      <input type="checkbox"> Light Theme
+      <input type="checkbox"> Enable cb3
     </label>
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
