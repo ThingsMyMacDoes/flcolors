@@ -17,6 +17,11 @@ body {
   margin-bottom: 10px;
 }
 
+.setting-options-row {
+  display: flex;
+  gap: 20px; /* Space between inline options */
+}
+
 .setting-option {
   display: flex;
   align-items: center;
