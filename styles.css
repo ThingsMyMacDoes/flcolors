@@ -21,7 +21,7 @@ body {
 
 .setting-options-row {
   display: flex;
-  gap: 20px; /* Space between inline options */
+  gap: 30px; /* Space between inline options */
 }
 
 .setting-option {
