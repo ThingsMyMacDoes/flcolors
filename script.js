@@ -28,8 +28,8 @@ function changeTheme(theme) {
     });
   } else {
     // Apply dark theme styles
-    body.style.backgroundColor = '#1e1e1e';
-    containers.forEach(container => container.style.backgroundColor = '#2c2c2c');
+    body.style.backgroundColor = '#2c2c2c';
+    containers.forEach(container => container.style.backgroundColor = '#1e1e1e');
     body.style.color = '#6C6C6C'; // Default text color for dark theme
 
     // Dark theme color squares for high contrast options
