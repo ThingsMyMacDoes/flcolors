@@ -1,7 +1,8 @@
-// Function to initialize the theme on page load
+// Function to initialize the theme and text color on page load
 function initializeTheme() {
-  // Set default theme to dark
+  // Set default theme to dark and default text color to #6C6C6C (108, 108, 108)
   changeTheme('dark');
+  document.body.style.color = '#6C6C6C';
 }
 
 // Function to change theme based on selection
@@ -14,6 +15,7 @@ function changeTheme(theme) {
     // Apply light theme styles
     body.style.backgroundColor = '#E1E1E1';
     containers.forEach(container => container.style.backgroundColor = '#EEEEEE');
+    body.style.color = '#3D3D3D'; // Default text color for light theme
 
     // Light theme color squares for high contrast options
     colorSquares.forEach(square => {
@@ -28,6 +30,7 @@ function changeTheme(theme) {
     // Apply dark theme styles
     body.style.backgroundColor = '#1e1e1e';
     containers.forEach(container => container.style.backgroundColor = '#2c2c2c');
+    body.style.color = '#6C6C6C'; // Default text color for dark theme
 
     // Dark theme color squares for high contrast options
     colorSquares.forEach(square => {
