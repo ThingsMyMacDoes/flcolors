@@ -1,3 +1,10 @@
+// Function to initialize the theme on page load
+function initializeTheme() {
+  // Set default theme to dark
+  changeTheme('dark');
+}
+
+// Function to change theme based on selection
 function changeTheme(theme) {
   const body = document.body;
   const containers = document.querySelectorAll('.setting-container');
@@ -37,6 +44,7 @@ function changeTheme(theme) {
   body.dataset.theme = theme;
 }
 
+// Function to set text color based on high contrast selection
 function setTextColor(color) {
   const body = document.body;
   const theme = body.dataset.theme; // Get the current theme
@@ -86,3 +94,6 @@ function setTextColor(color) {
     }
   }
 }
+
+// Initialize theme on page load
+window.onload = initializeTheme;
