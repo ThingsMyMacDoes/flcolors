@@ -11,12 +11,12 @@ function changeTheme(theme) {
 
     // Light theme color squares
     colorSquares.forEach(square => {
-      if (square.dataset.color === 'color1') square.style.backgroundColor = '#ff6961';
-      if (square.dataset.color === 'color2') square.style.backgroundColor = '#ffb347';
-      if (square.dataset.color === 'color3') square.style.backgroundColor = '#fdfd96';
-      if (square.dataset.color === 'color4') square.style.backgroundColor = '#77dd77';
-      if (square.dataset.color === 'color5') square.style.backgroundColor = '#aec6cf';
-      if (square.dataset.color === 'color6') square.style.backgroundColor = '#cfcfc4';
+      if (square.dataset.color === 'color1') square.style.backgroundColor = '#c75300';
+      if (square.dataset.color === 'color2') square.style.backgroundColor = '#000000';
+      if (square.dataset.color === 'color3') square.style.backgroundColor = '#0061fd';
+      if (square.dataset.color === 'color4') square.style.backgroundColor = '#007000';
+      if (square.dataset.color === 'color5') square.style.backgroundColor = '#c500db';
+      if (square.dataset.color === 'color6') square.style.backgroundColor = '#d10070';
     });
   } else {
     // Apply dark theme styles (default)
