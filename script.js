@@ -6,7 +6,6 @@ function changeTheme(theme) {
   if (theme === 'light') {
     // Apply light theme styles
     body.style.backgroundColor = '#E1E1E1';
-    body.style.color = '#444444';
     containers.forEach(container => container.style.backgroundColor = '#EEEEEE');
 
     // Light theme color squares
@@ -21,7 +20,6 @@ function changeTheme(theme) {
   } else {
     // Apply dark theme styles (default)
     body.style.backgroundColor = '#1e1e1e';
-    body.style.color = '#ffffff';
     containers.forEach(container => container.style.backgroundColor = '#2c2c2c');
 
     // Dark theme color squares
@@ -37,26 +35,26 @@ function changeTheme(theme) {
 }
 
 function setTextColor(color) {
-  // Set the text color based on the selected color option
   const body = document.body;
+  // Set the text color based on the selected color option in high contrast
   switch(color) {
     case 'color1':
-      body.style.color = '#c75300'; // Matches color1 in light theme
+      body.style.color = '#c75300'; // Dark Orange
       break;
     case 'color2':
-      body.style.color = '#000000'; // Matches color2 in light theme
+      body.style.color = '#000000'; // Black
       break;
     case 'color3':
-      body.style.color = '#0061fd'; // Matches color3 in light theme
+      body.style.color = '#0061fd'; // Blue
       break;
     case 'color4':
-      body.style.color = '#007000'; // Matches color4 in light theme
+      body.style.color = '#007000'; // Green
       break;
     case 'color5':
-      body.style.color = '#c500db'; // Matches color5 in light theme
+      body.style.color = '#c500db'; // Purple
       break;
     case 'color6':
-      body.style.color = '#d10070'; // Matches color6 in light theme
+      body.style.color = '#d10070'; // Pink
       break;
   }
 }
