@@ -34,12 +34,12 @@ function changeTheme(theme) {
 
     // Dark theme color squares for high contrast options
     colorSquares.forEach(square => {
-      if (square.dataset.color === 'color1') square.style.backgroundColor = '#ff4c4c'; // Lighter Red
-      if (square.dataset.color === 'color2') square.style.backgroundColor = '#ff8c42'; // Lighter Orange
-      if (square.dataset.color === 'color3') square.style.backgroundColor = '#f5e342'; // Yellow
-      if (square.dataset.color === 'color4') square.style.backgroundColor = '#4caf50'; // Light Green
-      if (square.dataset.color === 'color5') square.style.backgroundColor = '#42a5f5'; // Light Blue
-      if (square.dataset.color === 'color6') square.style.backgroundColor = '#9e9e9e'; // Light Gray
+      if (square.dataset.color === 'color1') square.style.backgroundColor = '#ffff00'; // Lighter Red
+      if (square.dataset.color === 'color2') square.style.backgroundColor = '#00ffff'; // Lighter Orange
+      if (square.dataset.color === 'color3') square.style.backgroundColor = '#d3d3d3'; // Yellow
+      if (square.dataset.color === 'color4') square.style.backgroundColor = '#00ff00'; // Light Green
+      if (square.dataset.color === 'color5') square.style.backgroundColor = '#ff5cb3'; // Light Blue
+      if (square.dataset.color === 'color6') square.style.backgroundColor = '#ffa500'; // Light Gray
     });
   }
 
