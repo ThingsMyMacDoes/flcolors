@@ -1,5 +1,5 @@
 body {
-  background-color: #1e1e1e; /* Default dark background */
+  background-color: #2c2c2c; /* Default dark background */
   color: #ffffff; /* Default white text color */
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -7,7 +7,7 @@ body {
 }
 
 .setting-container {
-  background-color: #2c2c2c; /* Default dark background for containers */
+  background-color: #1e1e1e; /* Default dark background for containers */
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px; /* Space between containers */
