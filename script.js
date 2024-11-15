@@ -2,7 +2,7 @@
 function initializeTheme() {
   // Set default theme to dark and default text color to #6C6C6C (108, 108, 108)
   changeTheme('dark');
-  document.body.style.color = '#6C6C6C';
+  document.body.style.color = '#C5C5C5';
 }
 
 // Function to change theme based on selection
