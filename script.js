@@ -1,24 +1,24 @@
-// Function to initialize the theme and text color on page load
+// Function to initialize the theme and radio button colors on page load
 function initializeTheme() {
-  // Set default theme to dark and configure colors
+  // Set default theme to dark and configure colors for radio buttons
   changeTheme('dark');
   document.body.style.color = '#C5C5C5'; // Default text color
 }
 
-// Function to change theme and dynamically update styles
+// Function to change the theme and dynamically update radio button colors
 function changeTheme(theme) {
   const body = document.body;
   const containers = document.querySelectorAll('.setting-container');
   const radioButtons = document.querySelectorAll('.color-options input[type="radio"]');
 
-  // Define text and radio button colors for each theme
+  // Define the colors for radio buttons based on theme
   const lightThemeColors = ['#c75300', '#000000', '#0061fd', '#007000', '#c500db', '#d10070'];
   const darkThemeColors = ['#ffff00', '#00ffff', '#d3d3d3', '#00ff00', '#ff5cb3', '#ffa500'];
 
-  // Select colors based on theme
+  // Select colors based on the theme
   const radioButtonColors = theme === 'light' ? lightThemeColors : darkThemeColors;
 
-  // Apply the theme styles
+  // Apply the theme styles to the body and containers
   if (theme === 'light') {
     body.style.backgroundColor = '#E1E1E1';
     containers.forEach(container => (container.style.backgroundColor = '#EEEEEE'));
@@ -33,18 +33,18 @@ function changeTheme(theme) {
   radioButtons.forEach((radio, index) => {
     radio.style.width = '20px';
     radio.style.height = '20px';
-    radio.style.accentColor = radioButtonColors[index]; // Apply color to radio button
+    radio.style.accentColor = radioButtonColors[index]; // Set the color of radio buttons
   });
 
   // Store the selected theme
   body.dataset.theme = theme;
 }
 
-// Function to set text color based on the selected color option
+// Function to set the text color based on the selected option
 function setTextColor(color) {
   const body = document.body;
 
-  // Define text colors for all options
+  // Define the text colors for all color options
   const lightThemeTextColors = {
     color1: '#c75300', // Dark Orange
     color2: '#000000', // Black
@@ -71,5 +71,5 @@ function setTextColor(color) {
   body.style.color = textColor;
 }
 
-// Initialize theme on page load
+// Initialize the theme when the page loads
 window.onload = initializeTheme;
