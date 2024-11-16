@@ -9,9 +9,9 @@ function initializeTheme() {
 function changeTheme(theme) {
   const body = document.body;
   const containers = document.querySelectorAll('.setting-container');
-  const radioButtons = document.querySelectorAll('input[type="radio"]');
+  const radioButtons = document.querySelectorAll('.color-options input[type="radio"]');
 
-  // Define text and corresponding radio button colors for each theme
+  // Define text and radio button colors for each theme
   const lightThemeColors = ['#c75300', '#000000', '#0061fd', '#007000', '#c500db', '#d10070'];
   const darkThemeColors = ['#ffff00', '#00ffff', '#d3d3d3', '#00ff00', '#ff5cb3', '#ffa500'];
 
@@ -29,9 +29,11 @@ function changeTheme(theme) {
     body.style.color = '#6C6C6C'; // Default text color for dark theme
   }
 
-  // Update the background color of the radio buttons to match the theme's text colors
+  // Update the background color of the radio buttons
   radioButtons.forEach((radio, index) => {
-    radio.style.backgroundColor = radioButtonColors[index];
+    radio.style.width = '20px';
+    radio.style.height = '20px';
+    radio.style.accentColor = radioButtonColors[index]; // Apply color to radio button
   });
 
   // Store the selected theme
