@@ -44,8 +44,8 @@ function changeTheme(theme) {
       if (square.dataset.color === 'color8') square.style.backgroundColor = '#C59434'; // Light Gray
       if (square.dataset.color === 'color9') square.style.backgroundColor = '#DECBE3'; // Light Gray
       if (square.dataset.color === 'color10') square.style.backgroundColor = '#FADFE2'; // Light Gray
-      if (square.dataset.color === 'color11') square.style.backgroundColor = '#C59434'; // Light Gray
-      if (square.dataset.color === 'color12') square.style.backgroundColor = '#C59434'; // Light Gray
+      if (square.dataset.color === 'color11') square.style.backgroundColor = '#9E9CC2'; // Light Gray
+      if (square.dataset.color === 'color12') square.style.backgroundColor = '#DCB69F'; // Light Gray
     });
   }
 
@@ -113,10 +113,10 @@ function setTextColor(color) {
         body.style.color = '#FADFE2'; // Light Gray
         break;
       case 'color11':
-        body.style.color = '#C59434'; // Light Gray
+        body.style.color = '#9E9CC2'; // Light Gray
         break;
       case 'color12':
-        body.style.color = '#C59434'; // Light Gray
+        body.style.color = '#DCB69F'; // Light Gray
         break;
     }
   }
