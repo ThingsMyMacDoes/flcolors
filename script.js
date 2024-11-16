@@ -1,47 +1,24 @@
 // Function to initialize the theme and text color on page load
 function initializeTheme() {
-  // Set default theme to dark and default text color to #6C6C6C (108, 108, 108)
-  changeTheme('dark');
-  document.body.style.color = '#C5C5C5';
+  changeTheme('dark'); // Set default theme to dark
+  document.body.style.color = '#C5C5C5'; // Default text color
 }
 
 // Function to change theme based on selection
 function changeTheme(theme) {
   const body = document.body;
   const containers = document.querySelectorAll('.setting-container');
-  const colorSquares = document.querySelectorAll('.color-square');
 
   if (theme === 'light') {
     // Apply light theme styles
     body.style.backgroundColor = '#E1E1E1';
-    containers.forEach(container => container.style.backgroundColor = '#EEEEEE');
+    containers.forEach(container => (container.style.backgroundColor = '#EEEEEE'));
     body.style.color = '#3D3D3D'; // Default text color for light theme
-
-    // Light theme color squares for high contrast options
-    colorSquares.forEach(square => {
-      if (square.dataset.color === 'color1') square.style.backgroundColor = '#c75300'; // Dark Orange
-      if (square.dataset.color === 'color2') square.style.backgroundColor = '#000000'; // Black
-      if (square.dataset.color === 'color3') square.style.backgroundColor = '#0061fd'; // Blue
-      if (square.dataset.color === 'color4') square.style.backgroundColor = '#007000'; // Green
-      if (square.dataset.color === 'color5') square.style.backgroundColor = '#c500db'; // Purple
-      if (square.dataset.color === 'color6') square.style.backgroundColor = '#d10070'; // Pink
-    });
   } else {
     // Apply dark theme styles
     body.style.backgroundColor = '#2c2c2c';
-    containers.forEach(container => container.style.backgroundColor = '#1e1e1e');
+    containers.forEach(container => (container.style.backgroundColor = '#1e1e1e'));
     body.style.color = '#6C6C6C'; // Default text color for dark theme
-
-    // Dark theme color squares for high contrast options
-    colorSquares.forEach(square => {
-      if (square.dataset.color === 'color1') square.style.backgroundColor = '#ffff00'; // Lighter Red
-      if (square.dataset.color === 'color2') square.style.backgroundColor = '#00ffff'; // Lighter Orange
-      if (square.dataset.color === 'color3') square.style.backgroundColor = '#d3d3d3'; // Yellow
-      if (square.dataset.color === 'color4') square.style.backgroundColor = '#00ff00'; // Light Green
-      if (square.dataset.color === 'color5') square.style.backgroundColor = '#ff5cb3'; // Light Blue
-      if (square.dataset.color === 'color6') square.style.backgroundColor = '#ffa500'; // Light Gray
-      if (square.dataset.color === 'color7') square.style.backgroundColor = '#704214'; // Light Gray    
-    });
   }
 
   // Store the selected theme in a variable to use in setTextColor
@@ -51,55 +28,31 @@ function changeTheme(theme) {
 // Function to set text color based on high contrast selection
 function setTextColor(color) {
   const body = document.body;
-  const theme = body.dataset.theme; // Get the current theme
 
-  // Set text color based on the selected color option and the current theme
-  if (theme === 'light') {
-    switch(color) {
-      case 'color1':
-        body.style.color = '#c75300'; // Dark Orange
-        break;
-      case 'color2':
-        body.style.color = '#000000'; // Black
-        break;
-      case 'color3':
-        body.style.color = '#0061fd'; // Blue
-        break;
-      case 'color4':
-        body.style.color = '#007000'; // Green
-        break;
-      case 'color5':
-        body.style.color = '#ff5cb3'; // Purple
-        break;
-      case 'color6':
-        body.style.color = '#d10070'; // Pink
-        break;
-    }
-  } else { // dark theme
-    switch(color) {
-      case 'color1':
-        body.style.color = '#ffff00'; // Lighter Red
-        break;
-      case 'color2':
-        body.style.color = '#00ffff'; // Lighter Orange
-        break;
-      case 'color3':
-        body.style.color = '#d3d3d3'; // Yellow
-        break;
-      case 'color4':
-        body.style.color = '#00ff00'; // Light Green
-        break;
-      case 'color5':
-        body.style.color = '#ff5cb3'; // Light Blue
-        break;
-      case 'color6':
-        body.style.color = '#ffa500'; // Light Gray
-        break;
-      case 'color7':
-        body.style.color = '#704214'; // Light Gray
-        break;
-    }
-  }
+  // Define text colors for light and dark themes
+  const lightThemeColors = {
+    color1: '#c75300', // Dark Orange
+    color2: '#000000', // Black
+    color3: '#0061fd', // Blue
+    color4: '#007000', // Green
+    color5: '#c500db', // Purple
+    color6: '#d10070'  // Pink
+  };
+
+  const darkThemeColors = {
+    color1: '#ffff00', // Yellow
+    color2: '#00ffff', // Cyan
+    color3: '#d3d3d3', // Light Gray
+    color4: '#00ff00', // Bright Green
+    color5: '#ff5cb3', // Light Pink
+    color6: '#ffa500'  // Orange
+  };
+
+  // Apply the corresponding text color based on the theme
+  const theme = body.dataset.theme || 'dark'; // Default to dark theme
+  const textColor = theme === 'light' ? lightThemeColors[color] : darkThemeColors[color];
+
+  body.style.color = textColor;
 }
 
 // Initialize theme on page load
