@@ -1,6 +1,7 @@
 // Function to initialize the theme and text color on page load
 function initializeTheme() {
-  changeTheme('dark'); // Default theme is dark
+  // Set default theme to dark and configure colors accordingly
+  changeTheme('dark');
   document.body.style.color = '#C5C5C5'; // Default text color
 }
 
