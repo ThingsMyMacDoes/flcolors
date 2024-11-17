@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Theme Selection Section -->
   <div class="setting-container">
     <div class="setting-header">Color Themes</div>
     <div class="setting-options-row">
@@ -19,6 +20,7 @@
     </div>
   </div>
   
+  <!-- High Contrast Colors Section -->
   <div class="setting-container">
     <div class="setting-header">High Contrast</div>
     <div class="color-options">
@@ -49,6 +51,100 @@
     </div>
   </div>
 
+  <!-- Deuteranopia Green-Blind Section -->
+  <div class="setting-container">
+    <div class="setting-header">Deuteranopia Green-Blind</div>
+    <div class="color-options">
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color7')"> <span class="color-name">Green-1</span>
+        <span class="color-square" data-color="color7"></span>
+      </label>
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color8')"> <span class="color-name">Green-2</span>
+        <span class="color-square" data-color="color8"></span>
+      </label>
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color9')"> <span class="color-name">Green-3</span>
+        <span class="color-square" data-color="color9"></span>
+      </label>
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color10')"> <span class="color-name">Green-4</span>
+        <span class="color-square" data-color="color10"></span>
+      </label>
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color11')"> <span class="color-name">Green-5</span>
+        <span class="color-square" data-color="color11"></span>
+      </label>
+      <label class="color-option">
+        <input type="radio" name="textColor" onclick="setTextColor('color12')"> <span class="color-name">Green-6</span>
+        <span class="color-square" data-color="color12"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Protanopia Red-Blind Section -->
+  <div class="setting-container">
+    <div class="setting-header">Protanopia Red-Blind</div>
+    <div class="color-options">
+      <label class="color-option">
+        <span class="color-square" data-color="color1"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color1')"> <span class="color-name">Red-1</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color2"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color2')"> <span class="color-name">Red-2</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color3"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color3')"> <span class="color-name">Red-3</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color4"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color4')"> <span class="color-name">Red-4</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color5"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color5')"> <span class="color-name">Red-5</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color6"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color6')"> <span class="color-name">Red-6</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Tritanopia Blue-Blind Section -->
+  <div class="setting-container">
+    <div class="setting-header">Tritanopia Blue-Blind</div>
+    <div class="color-options">
+      <label class="color-option">
+        <span class="color-square" data-color="color1"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color1')"> <span class="color-name">Blue-1</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color2"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color2')"> <span class="color-name">Blue-2</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color3"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color3')"> <span class="color-name">Blue-3</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color4"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color4')"> <span class="color-name">Blue-4</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color5"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color5')"> <span class="color-name">Blue-5</span>
+      </label>
+      <label class="color-option">
+        <span class="color-square" data-color="color6"></span>
+        <input type="radio" name="textColor" onclick="setTextColor('color6')"> <span class="color-name">Blue-6</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- JavaScript for theme and text color functionality -->
   <script src="script.js"></script>
 </body>
 </html>
