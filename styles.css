@@ -1,17 +1,29 @@
+:root {
+  --bg-color: #2c2c2c;
+  --text-color: #ffffff;
+  --container-bg-color: #1e1e1e;
+  --color1: #ff6961; /* Red */
+  --color2: #ffb347; /* Orange */
+  --color3: #fdfd96; /* Yellow */
+  --color4: #77dd77; /* Green */
+  --color5: #aec6cf; /* Blue */
+  --color6: #cfcfc4; /* Gray */
+}
+
 body {
-  background-color: #2c2c2c; /* Default dark background */
-  color: #ffffff; /* Default white text color */
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
   margin: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .setting-container {
-  background-color: #1e1e1e; /* Default dark background for containers */
+  background-color: var(--container-bg-color);
   padding: 15px;
   border-radius: 0px;
-  margin-bottom: 20px; /* Space between containers */
-  transition: background-color 0.3s; /* Smooth transition for theme change */
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
 }
 
 .setting-header {
@@ -21,7 +33,7 @@ body {
 
 .setting-options-row {
   display: flex;
-  gap: 30px; /* Space between inline options */
+  gap: 30px;
 }
 
 .setting-option {
@@ -57,11 +69,12 @@ body {
   height: 15px;
   border-radius: 3px;
   background-color: #ffffff; /* Default color */
+  transition: background-color 0.3s;
 }
 
-.color-square[data-color="color1"] { background-color: #ff6961; } /* Red */
-.color-square[data-color="color2"] { background-color: #ffb347; } /* Orange */
-.color-square[data-color="color3"] { background-color: #fdfd96; } /* Yellow */
-.color-square[data-color="color4"] { background-color: #77dd77; } /* Green */
-.color-square[data-color="color5"] { background-color: #aec6cf; } /* Blue */
-.color-square[data-color="color6"] { background-color: #cfcfc4; } /* Gray */
+.color-square[data-color="color1"] { background-color: var(--color1); }
+.color-square[data-color="color2"] { background-color: var(--color2); }
+.color-square[data-color="color3"] { background-color: var(--color3); }
+.color-square[data-color="color4"] { background-color: var(--color4); }
+.color-square[data-color="color5"] { background-color: var(--color5); }
+.color-square[data-color="color6"] { background-color: var(--color6); }
