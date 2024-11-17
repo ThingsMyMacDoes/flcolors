@@ -1,33 +1,20 @@
 /* General Styles */
 body {
-  background-color: #2c2c2c; /* Default dark background */
-  color: #ffffff; /* Default white text color */
   font-family: Arial, sans-serif;
   margin: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .setting-container {
-  background-color: #1e1e1e; /* Default dark background for containers */
   padding: 15px;
   border-radius: 5px;
-  margin-bottom: 20px; /* Space between containers */
-  transition: background-color 0.3s; /* Smooth transition for theme change */
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
 }
 
 .setting-header {
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.setting-options-row {
-  display: flex;
-  gap: 30px; /* Space between inline options */
-}
-
-.setting-option {
-  display: flex;
-  align-items: center;
 }
 
 .color-options {
@@ -47,48 +34,52 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 3px;
-  background-color: #ffffff; /* Default color */
 }
 
-/* High Contrast Colors */
-.color-square[data-color="color1"] { background-color: #ff6961; } /* Red */
-.color-square[data-color="color2"] { background-color: #ffb347; } /* Orange */
-.color-square[data-color="color3"] { background-color: #fdfd96; } /* Yellow */
-.color-square[data-color="color4"] { background-color: #77dd77; } /* Green */
-.color-square[data-color="color5"] { background-color: #aec6cf; } /* Blue */
-.color-square[data-color="color6"] { background-color: #cfcfc4; } /* Gray */
+/* Dark Theme */
+body.dark-theme {
+  --color1: #ff6961; /* Light Red */
+  --color2: #ffb347; /* Peach */
+  --color3: #fdfd96; /* Light Yellow */
+  --color4: #77dd77; /* Pale Green */
+  --color5: #aec6cf; /* Sky Blue */
+  --color6: #cfcfc4; /* Light Gray */
+  --pcolor1: #ff7f7f; /* Soft Red */
+  --pcolor2: #deb887; /* Tan */
+  --pcolor3: #98fb98; /* Pale Green */
+  --pcolor4: #f5fffa; /* Mint Green */
+  --dcolor1: #ffc0cb; /* Light Pink */
+  --dcolor2: #ffec8b; /* Golden Yellow */
+  --dcolor3: #eedd82; /* Light Olive */
+  --dcolor4: #afeeee; /* Pale Sea Green */
+  --tcolor1: #e6e6fa; /* Lavender */
+  --tcolor2: #b0e0e6; /* Baby Blue */
+  --tcolor3: #40e0d0; /* Turquoise */
+  --tcolor4: #00ff7f; /* Spring Green */
+  --text-color: #ffffff; /* Light text for dark background */
+  background-color: #2c2c2c;
+}
 
-/* Protanopia-Friendly Colors */
-.color-square[data-color="pcolor1"] { background-color: #a52a2a; } /* Dark Red */
-.color-square[data-color="pcolor2"] { background-color: #8b4513; } /* Brown */
-.color-square[data-color="pcolor3"] { background-color: #9acd32; } /* Yellow-Green */
-.color-square[data-color="pcolor4"] { background-color: #008000; } /* Green */
-
-/* Deuteranopia-Friendly Colors */
-.color-square[data-color="dcolor1"] { background-color: #ffc0cb; } /* Rose */
-.color-square[data-color="dcolor2"] { background-color: #daa520; } /* Goldenrod */
-.color-square[data-color="dcolor3"] { background-color: #808000; } /* Olive */
-.color-square[data-color="dcolor4"] { background-color: #2e8b57; } /* Sea Green */
-
-/* Tritanopia-Friendly Colors */
-.color-square[data-color="tcolor1"] { background-color: #9370db; } /* Purple */
-.color-square[data-color="tcolor2"] { background-color: #4682b4; } /* Blue */
-.color-square[data-color="tcolor3"] { background-color: #008080; } /* Teal */
-.color-square[data-color="tcolor4"] { background-color: #3cb371; } /* Green */
-
-/* Light Theme Overrides */
+/* Light Theme */
 body.light-theme {
+  --color1: #8b0000; /* Dark Red */
+  --color2: #8b4513; /* Brown */
+  --color3: #556b2f; /* Olive */
+  --color4: #006400; /* Dark Green */
+  --color5: #00008b; /* Dark Blue */
+  --color6: #2f4f4f; /* Dark Gray */
+  --pcolor1: #a52a2a; /* Brick Red */
+  --pcolor2: #8b4513; /* Dark Tan */
+  --pcolor3: #228b22; /* Forest Green */
+  --pcolor4: #013220; /* Pine Green */
+  --dcolor1: #b7410e; /* Rust */
+  --dcolor2: #ffd700; /* Gold */
+  --dcolor3: #6b8e23; /* Moss Green */
+  --dcolor4: #008080; /* Deep Teal */
+  --tcolor1: #4b0082; /* Plum */
+  --tcolor2: #4b0082; /* Indigo */
+  --tcolor3: #36454f; /* Charcoal */
+  --tcolor4: #004225; /* Bottle Green */
+  --text-color: #000000; /* Dark text for light background */
   background-color: #ffffff;
-  color: #000000;
 }
-
-body.light-theme .setting-container {
-  background-color: #f0f0f0;
-}
-
-body.light-theme .color-square[data-color="color1"] { background-color: #ff5c5c; }
-body.light-theme .color-square[data-color="color2"] { background-color: #ffa07a; }
-body.light-theme .color-square[data-color="color3"] { background-color: #ffff99; }
-body.light-theme .color-square[data-color="color4"] { background-color: #90ee90; }
-body.light-theme .color-square[data-color="color5"] { background-color: #add8e6; }
-body.light-theme .color-square[data-color="color6"] { background-color: #d3d3d3; }
