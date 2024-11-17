@@ -1,60 +1,74 @@
-// Function to initialize the theme and text color on page load
-function initializeTheme() {
-  changeTheme('dark');
+// Themes and Color Names
+const themes = {
+  light: {
+    colorNames: {
+      color1: 'Light Red',
+      color2: 'Peach',
+      color3: 'Light Yellow',
+      color4: 'Pale Green',
+      color5: 'Sky Blue',
+      color6: 'Light Gray',
+      pcolor1: 'Soft Red',
+      pcolor2: 'Tan',
+      pcolor3: 'Pale Green',
+      pcolor4: 'Mint Green',
+      dcolor1: 'Light Pink',
+      dcolor2: 'Golden Yellow',
+      dcolor3: 'Light Olive',
+      dcolor4: 'Pale Sea Green',
+      tcolor1: 'Lavender',
+      tcolor2: 'Baby Blue',
+      tcolor3: 'Turquoise',
+      tcolor4: 'Spring Green',
+    },
+  },
+  dark: {
+    colorNames: {
+      color1: 'Red',
+      color2: 'Orange',
+      color3: 'Yellow',
+      color4: 'Green',
+      color5: 'Blue',
+      color6: 'Gray',
+      pcolor1: 'Dark Red',
+      pcolor2: 'Brown',
+      pcolor3: 'Yellow-Green',
+      pcolor4: 'Green',
+      dcolor1: 'Rose',
+      dcolor2: 'Goldenrod',
+      dcolor3: 'Olive',
+      dcolor4: 'Sea Green',
+      tcolor1: 'Purple',
+      tcolor2: 'Blue',
+      tcolor3: 'Teal',
+      tcolor4: 'Green',
+    },
+  },
+};
+
+// Change Theme
+function changeTheme(theme) {
+  document.body.className = theme + '-theme';
+
+  // Update color names dynamically
+  const colorNames = themes[theme].colorNames;
+  document.querySelectorAll('.color-option').forEach(option => {
+    const colorSquare = option.querySelector('.color-square');
+    const colorName = option.querySelector('.color-name');
+    const colorKey = colorSquare.dataset.color;
+    if (colorNames[colorKey]) {
+      colorName.textContent = colorNames[colorKey];
+    }
+  });
 }
 
-// Function to change theme based on selection
-function changeTheme(theme) {
-  const root = document.documentElement;
-  const colorNames = document.querySelectorAll('.color-name');
-
-  if (theme === 'light') {
-    root.style.setProperty('--bg-color', '#E1E1E1');
-    root.style.setProperty('--text-color', '#3D3D3D');
-    root.style.setProperty('--container-bg-color', '#EEEEEE');
-    root.style.setProperty('--color1', '#c75300'); // Dark Orange
-    root.style.setProperty('--color2', '#000000'); // Black
-    root.style.setProperty('--color3', '#0061fd'); // Blue
-    root.style.setProperty('--color4', '#007000'); // Green
-    root.style.setProperty('--color5', '#c500db'); // Purple
-    root.style.setProperty('--color6', '#d10070'); // Pink
-
-    colorNames.forEach((name, index) => {
-      const lightNames = ['Dark Orange', 'Black', 'Blue', 'Green', 'Purple', 'Pink'];
-      name.textContent = lightNames[index];
-    });
-  } else {
-    root.style.setProperty('--bg-color', '#2c2c2c');
-    root.style.setProperty('--text-color', '#ffffff');
-    root.style.setProperty('--container-bg-color', '#1e1e1e');
-    root.style.setProperty('--color1', '#ff6961'); // Red
-    root.style.setProperty('--color2', '#ffb347'); // Orange
-    root.style.setProperty('--color3', '#fdfd96'); // Yellow
-    root.style.setProperty('--color4', '#77dd77'); // Green
-    root.style.setProperty('--color5', '#aec6cf'); // Blue
-    root.style.setProperty('--color6', '#cfcfc4'); // Gray
-
-    colorNames.forEach((name, index) => {
-      const darkNames = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Gray'];
-      name.textContent = darkNames[index];
-    });
+// Set Text Color
+function setTextColor(colorKey) {
+  const colorSquare = document.querySelector(`.color-square[data-color="${colorKey}"]`);
+  if (colorSquare) {
+    document.body.style.color = getComputedStyle(colorSquare).backgroundColor;
   }
 }
 
-// Function to set text color based on high contrast selection
-function setTextColor(color) {
-  const root = document.documentElement;
-  const textColors = {
-    color1: getComputedStyle(root).getPropertyValue('--color1'),
-    color2: getComputedStyle(root).getPropertyValue('--color2'),
-    color3: getComputedStyle(root).getPropertyValue('--color3'),
-    color4: getComputedStyle(root).getPropertyValue('--color4'),
-    color5: getComputedStyle(root).getPropertyValue('--color5'),
-    color6: getComputedStyle(root).getPropertyValue('--color6'),
-  };
-
-  document.body.style.color = textColors[color];
-}
-
-// Initialize theme on page load
-window.onload = initializeTheme;
+// Initialize Theme and Colors
+changeTheme('dark');
