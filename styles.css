@@ -1,14 +1,11 @@
 /* General Styles */
 body {
-  background-color: #2c2c2c; /* Default dark background */
-  color: #ffffff; /* Default white text color */
   font-family: Arial, sans-serif;
   margin: 20px;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
 }
 
 .setting-container {
-  background-color: #1e1e1e; /* Default dark background for containers */
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px; /* Space between containers */
@@ -47,48 +44,6 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 3px;
-  background-color: #ffffff; /* Default color */
 }
 
-/* High Contrast Colors */
-.color-square[data-color="color1"] { background-color: #ff6961; } /* Red */
-.color-square[data-color="color2"] { background-color: #ffb347; } /* Orange */
-.color-square[data-color="color3"] { background-color: #fdfd96; } /* Yellow */
-.color-square[data-color="color4"] { background-color: #77dd77; } /* Green */
-.color-square[data-color="color5"] { background-color: #aec6cf; } /* Blue */
-.color-square[data-color="color6"] { background-color: #cfcfc4; } /* Gray */
-
-/* Protanopia-Friendly Colors */
-.color-square[data-color="pcolor1"] { background-color: #a52a2a; } /* Dark Red */
-.color-square[data-color="pcolor2"] { background-color: #8b4513; } /* Brown */
-.color-square[data-color="pcolor3"] { background-color: #9acd32; } /* Yellow-Green */
-.color-square[data-color="pcolor4"] { background-color: #008000; } /* Green */
-
-/* Deuteranopia-Friendly Colors */
-.color-square[data-color="dcolor1"] { background-color: #ffc0cb; } /* Rose */
-.color-square[data-color="dcolor2"] { background-color: #daa520; } /* Goldenrod */
-.color-square[data-color="dcolor3"] { background-color: #808000; } /* Olive */
-.color-square[data-color="dcolor4"] { background-color: #2e8b57; } /* Sea Green */
-
-/* Tritanopia-Friendly Colors */
-.color-square[data-color="tcolor1"] { background-color: #9370db; } /* Purple */
-.color-square[data-color="tcolor2"] { background-color: #4682b4; } /* Blue */
-.color-square[data-color="tcolor3"] { background-color: #008080; } /* Teal */
-.color-square[data-color="tcolor4"] { background-color: #3cb371; } /* Green */
-
-/* Light Theme Overrides */
-body.light-theme {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-body.light-theme .setting-container {
-  background-color: #f0f0f0;
-}
-
-body.light-theme .color-square[data-color="color1"] { background-color: #ff5c5c; }
-body.light-theme .color-square[data-color="color2"] { background-color: #ffa07a; }
-body.light-theme .color-square[data-color="color3"] { background-color: #ffff99; }
-body.light-theme .color-square[data-color="color4"] { background-color: #90ee90; }
-body.light-theme .color-square[data-color="color5"] { background-color: #add8e6; }
-body.light-theme .color-square[data-color="color6"] { background-color: #d3d3d3; }
+/* Dynamic theme-specific styles will be applied via JavaScript */
