@@ -1,6 +1,6 @@
 // Themes and Color Names
 const themes = {
-  dark: {
+  light: {
     colorNames: {
       color1: 'Dark Red',
       color2: 'Brown',
@@ -22,7 +22,7 @@ const themes = {
       tcolor4: 'Bottle Green',
     },
   },
-  light: {
+  dark: {
     colorNames: {
       color1: 'Light Red',
       color2: 'Peach',
