@@ -2,6 +2,28 @@
 const themes = {
   light: {
     colorNames: {
+      color1: 'Dark Red',
+      color2: 'Brown',
+      color3: 'Olive',
+      color4: 'Dark Green',
+      color5: 'Dark Blue',
+      color6: 'Dark Gray',
+      pcolor1: 'Brick Red',
+      pcolor2: 'Dark Tan',
+      pcolor3: 'Forest Green',
+      pcolor4: 'Pine Green',
+      dcolor1: 'Rust',
+      dcolor2: 'Gold',
+      dcolor3: 'Moss Green',
+      dcolor4: 'Deep Teal',
+      tcolor1: 'Plum',
+      tcolor2: 'Indigo',
+      tcolor3: 'Charcoal',
+      tcolor4: 'Bottle Green',
+    },
+  },
+  dark: {
+    colorNames: {
       color1: 'Light Red',
       color2: 'Peach',
       color3: 'Light Yellow',
@@ -22,44 +44,30 @@ const themes = {
       tcolor4: 'Spring Green',
     },
   },
-  dark: {
-    colorNames: {
-      color1: 'Red',
-      color2: 'Orange',
-      color3: 'Yellow',
-      color4: 'Green',
-      color5: 'Blue',
-      color6: 'Gray',
-      pcolor1: 'Dark Red',
-      pcolor2: 'Brown',
-      pcolor3: 'Yellow-Green',
-      pcolor4: 'Green',
-      dcolor1: 'Rose',
-      dcolor2: 'Goldenrod',
-      dcolor3: 'Olive',
-      dcolor4: 'Sea Green',
-      tcolor1: 'Purple',
-      tcolor2: 'Blue',
-      tcolor3: 'Teal',
-      tcolor4: 'Green',
-    },
-  },
 };
 
 // Change Theme
 function changeTheme(theme) {
   document.body.className = theme + '-theme';
 
-  // Update color names dynamically
+  // Update color names and color squares dynamically
   const colorNames = themes[theme].colorNames;
   document.querySelectorAll('.color-option').forEach(option => {
     const colorSquare = option.querySelector('.color-square');
     const colorName = option.querySelector('.color-name');
     const colorKey = colorSquare.dataset.color;
+
     if (colorNames[colorKey]) {
+      // Update color name
       colorName.textContent = colorNames[colorKey];
+      // Update the background color of the color square
+      colorSquare.style.backgroundColor = getComputedStyle(document.body).getPropertyValue(`--${colorKey}`);
     }
   });
+
+  // Update body text color dynamically
+  const bodyTextColor = getComputedStyle(document.body).getPropertyValue('--text-color');
+  document.body.style.color = bodyTextColor;
 }
 
 // Set Text Color
