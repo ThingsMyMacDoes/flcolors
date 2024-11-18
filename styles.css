@@ -44,10 +44,10 @@ body.dark-theme {
   --color4: #00ff00; /* Green */
   --color5: #ff5cb3; /* Hot Pink */
   --color6: #ffa500; /* Orange */
-  --pcolor1: #ff7f7f; /* Soft Red */
-  --pcolor2: #deb887; /* Tan */
-  --pcolor3: #98fb98; /* Pale Green */
-  --pcolor4: #f5fffa; /* Mint Green */
+  --pcolor1: #ff00ff; /* Magenta */
+  --pcolor2: #32cd32; /* Lime Green */
+  --pcolor3: #ffbf00; /* Amber */
+  --pcolor4: #40e0d0; /* Turquoise */
   --dcolor1: #A3B7F9; /* Jordy Blue */
   --dcolor2: #C59434; /* Alpine */
   --dcolor3: #DECBE3; /* Light Purple */
