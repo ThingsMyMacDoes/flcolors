@@ -67,24 +67,33 @@ body.dark-theme {
 
 /* Light Theme */
 body.light-theme {
-  --color1: #8b0000; /* Dark Red */
-  --color2: #8b4513; /* Brown */
-  --color3: #556b2f; /* Olive */
-  --color4: #006400; /* Dark Green */
-  --color5: #00008b; /* Dark Blue */
-  --color6: #2f4f4f; /* Dark Gray */
-  --pcolor1: #a52a2a; /* Brick Red */
-  --pcolor2: #8b4513; /* Dark Tan */
-  --pcolor3: #228b22; /* Forest Green */
-  --pcolor4: #013220; /* Pine Green */
-  --dcolor1: #b7410e; /* Rust */
-  --dcolor2: #ffd700; /* Gold */
-  --dcolor3: #6b8e23; /* Moss Green */
-  --dcolor4: #008080; /* Deep Teal */
-  --tcolor1: #4b0082; /* Plum */
-  --tcolor2: #4b0082; /* Indigo */
-  --tcolor3: #36454f; /* Charcoal */
-  --tcolor4: #004225; /* Bottle Green */
+  /* Light Theme - Colors that contrast well on white background */
+
+/* Regular Colors */
+--color1: #333333; /* Dark Yellow (for contrast) */
+--color2: #0099cc; /* Deep Cyan */
+--color3: #333333; /* Dark Grey */
+--color4: #006400; /* Dark Green */
+--color5: #b30059; /* Deep Hot Pink */
+--color6: #cc7a00; /* Dark Orange */
+
+/* Protanopia-Friendly Colors */
+--pcolor1: #990099; /* Dark Magenta */
+--pcolor2: #228b22; /* Forest Green */
+--pcolor3: #ff8c00; /* Dark Amber */
+--pcolor4: #20b2aa; /* Light Sea Green */
+
+/* Deuteranopia-Friendly Colors */
+--dcolor1: #4d74b2; /* Steel Blue */
+--dcolor2: #b86b2e; /* Deep Orange */
+--dcolor3: #6e5d91; /* Purple */
+--dcolor4: #bdb09c; /* Tan */
+
+/* Tritanopia-Friendly Colors */
+--tcolor1: #f5deb3; /* Wheat */
+--tcolor2: #b0c4de; /* Light Steel Blue */
+--tcolor3: #dda0dd; /* Medium Purple */
+--tcolor4: #32cd32; /* Lime Green */
   --text-color: #000000; /* Dark text for light background */
   background-color: #e1e1e1; /* Primary light background */
   color: var(--text-color);
