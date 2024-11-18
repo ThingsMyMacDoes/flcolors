@@ -86,7 +86,7 @@ body.light-theme {
   --tcolor3: #36454f; /* Charcoal */
   --tcolor4: #004225; /* Bottle Green */
   --text-color: #000000; /* Dark text for light background */
-  background-color: #eeeeee; /* Primary light background */
+  background-color: #e1e1e1; /* Primary light background */
   color: var(--text-color);
 }
 
