@@ -70,12 +70,12 @@ body.light-theme {
   /* Light Theme - Colors that contrast well on white background */
 
 /* Regular Colors */
---color1: #333333; /* Dark Yellow (for contrast) */
---color2: #0099cc; /* Deep Cyan */
+--color1: #000ECC; /* Dark Blue */
+--color2: #0099cc; /* Pacific Blue */
 --color3: #333333; /* Dark Grey */
---color4: #006400; /* Dark Green */
---color5: #b30059; /* Deep Hot Pink */
---color6: #cc7a00; /* Dark Orange */
+--color4: #006400; /* Camarone */
+--color5: #b30059; /* Lipstick */
+--color6: #cc7a00; /* Indochine */
 
 /* Protanopia-Friendly Colors */
 --pcolor1: #990099; /* Dark Magenta */
