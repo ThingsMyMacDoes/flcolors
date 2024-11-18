@@ -38,12 +38,12 @@ body {
 
 /* Dark Theme */
 body.dark-theme {
-  --color1: #ff6961; /* Light Red */
-  --color2: #ffb347; /* Peach */
-  --color3: #fdfd96; /* Light Yellow */
-  --color4: #77dd77; /* Pale Green */
-  --color5: #aec6cf; /* Sky Blue */
-  --color6: #cfcfc4; /* Light Gray */
+  --color1: #ffff00; /* Light Red */
+  --color2: #00ffff; /* Peach */
+  --color3: #d3d3d3; /* Light Yellow */
+  --color4: #00ff00; /* Pale Green */
+  --color5: #ff5cb3; /* Sky Blue */
+  --color6: #ffa500; /* Light Gray */
   --pcolor1: #ff7f7f; /* Soft Red */
   --pcolor2: #deb887; /* Tan */
   --pcolor3: #98fb98; /* Pale Green */
