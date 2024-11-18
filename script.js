@@ -2,12 +2,12 @@
 const themes = {
   light: {
     colorNames: {
-      color1: 'Dark Red',
-      color2: 'Brown',
-      color3: 'Olive',
-      color4: 'Dark Green',
-      color5: 'Dark Blue',
-      color6: 'Dark Gray',
+      color1: 'Dark Blue',
+      color2: 'Pacific Blue',
+      color3: 'Dark Grey',
+      color4: 'Camarone',
+      color5: 'Lipstick',
+      color6: 'Indochine',
       pcolor1: 'Brick Red',
       pcolor2: 'Dark Tan',
       pcolor3: 'Forest Green',
