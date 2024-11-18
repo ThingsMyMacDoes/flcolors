@@ -50,6 +50,11 @@ const themes = {
 function changeTheme(theme) {
   document.body.className = theme + '-theme';
 
+  // Update all setting containers
+  document.querySelectorAll('.setting-container').forEach(container => {
+    container.className = `setting-container ${theme}-theme`;
+  });
+
   // Update color names and color squares dynamically
   const colorNames = themes[theme].colorNames;
   document.querySelectorAll('.color-option').forEach(option => {
