@@ -86,12 +86,12 @@ body.light-theme {
   --tcolor3: #36454f; /* Charcoal */
   --tcolor4: #004225; /* Bottle Green */
   --text-color: #000000; /* Dark text for light background */
-  background-color: #ffffff; /* Primary light background */
+  background-color: #f0f0f0; /* Primary light background */
   color: var(--text-color);
 }
 
 .setting-container.light-theme {
-  background-color: #f0f0f0; /* Light container color */
+  background-color: #ffffff; /* Light container color */
 }
 
 /* Color Square Styles */
