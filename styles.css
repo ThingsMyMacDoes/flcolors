@@ -17,6 +17,12 @@ body {
   margin-bottom: 10px;
 }
 
+.setting-options-row {
+  display: flex;
+  gap: 30px; /* Space between inline options */
+}
+
+
 .color-options {
   display: flex;
   flex-wrap: wrap;
