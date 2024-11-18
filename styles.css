@@ -52,10 +52,10 @@ body.dark-theme {
   --dcolor2: #C59434; /* Alpine */
   --dcolor3: #DECBE3; /* Light Purple */
   --dcolor4: #DCB69F; /* Cameo */
-  --tcolor1: #e6e6fa; /* Cameo */
-  --tcolor2: #b0e0e6; /* Baby Blue */
-  --tcolor3: #40e0d0; /* Turquoise */
-  --tcolor4: #00ff7f; /* Spring Green */
+  --tcolor1: #ffdab9; /* Peach */
+  --tcolor2: #e6e6fa; /* Lavender */
+  --tcolor3: #dda0dd; /* Plum */
+  --tcolor4: #7fff00; /* Chartreuse */
   --text-color: #ffffff; /* Light text for dark background */
   background-color: #2c2c2c; /* Primary dark background */
   color: var(--text-color);
