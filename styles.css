@@ -38,21 +38,21 @@ body {
 
 /* Dark Theme */
 body.dark-theme {
-  --color1: #ffff00; /* Light Red */
-  --color2: #00ffff; /* Peach */
-  --color3: #d3d3d3; /* Light Yellow */
-  --color4: #00ff00; /* Pale Green */
-  --color5: #ff5cb3; /* Sky Blue */
-  --color6: #ffa500; /* Light Gray */
+  --color1: #ffff00; /* Yellow */
+  --color2: #00ffff; /* Cyan */
+  --color3: #d3d3d3; /* Light Grey */
+  --color4: #00ff00; /* Green */
+  --color5: #ff5cb3; /* Hot Pink */
+  --color6: #ffa500; /* Orange */
   --pcolor1: #ff7f7f; /* Soft Red */
   --pcolor2: #deb887; /* Tan */
   --pcolor3: #98fb98; /* Pale Green */
   --pcolor4: #f5fffa; /* Mint Green */
-  --dcolor1: #A3B7F9; /* Light Pink */
-  --dcolor2: #C59434; /* Golden Yellow */
-  --dcolor3: #DECBE3; /* Light Olive */
-  --dcolor4: #DCB69F; /* Pale Sea Green */
-  --tcolor1: #e6e6fa; /* Lavender */
+  --dcolor1: #A3B7F9; /* Jordy Blue */
+  --dcolor2: #C59434; /* Alpine */
+  --dcolor3: #DECBE3; /* Light Purple */
+  --dcolor4: #DCB69F; /* Cameo */
+  --tcolor1: #e6e6fa; /* Cameo */
   --tcolor2: #b0e0e6; /* Baby Blue */
   --tcolor3: #40e0d0; /* Turquoise */
   --tcolor4: #00ff7f; /* Spring Green */
