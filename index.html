@@ -3,148 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Settings Layout</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>NSP kaainummers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .kaai {
+      padding: 15px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .button-container {
+      display: flex;
+      gap: 10px;
+    }
+    .kaai button {
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .kaai button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <div class="setting-container">
-    <div class="setting-header">Color Themes</div>
-    <div class="setting-options-row">
-      <label class="setting-option">
-        <input type="radio" name="theme" value="light" onclick="changeTheme('light')"> Light Theme
-      </label>
-      <label class="setting-option">
-        <input type="radio" name="theme" value="dark" onclick="changeTheme('dark')" checked> Dark Theme
-      </label>
-    </div>
+  <div class="header">
+    <h1>NSP kaainummers</h1>
+    <button id="sortButton">9720-0</button>
   </div>
-  
-  <div class="setting-container">
-    <div class="setting-header">High Contrast</div>
-    <div class="color-options">
-      <label class="color-option">
-        <span class="color-square" data-color="color1"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color1')"> yellow
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color2"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color2')"> blue
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color3"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color3')"> Option 3
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color4"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color4')"> Option 4
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color5"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color5')"> Option 5
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color6"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color6')"> Option 6
-      </label>
-    </div>
+  <div class="container" id="kaaiContainer">
+    <!-- Dynamic content will be inserted here -->
   </div>
-  
-  <div class="setting-container">
-     <div class="setting-header">Deuteranopia Green-Blind</div>
-    <div class="color-options">
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color7')"> Option 1
-        <span class="color-square" data-color="color7"></span>
-      </label>
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color8')"> Option 2
-        <span class="color-square" data-color="color8"></span>
-      </label>
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color9')"> Option 3
-        <span class="color-square" data-color="color9"></span>
-      </label>
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color10')"> Option 4
-        <span class="color-square" data-color="color10"></span>
-      </label>
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color11')"> Option 5
-        <span class="color-square" data-color="color11"></span>
-      </label>
-      <label class="color-option">
-        
-        <input type="radio" name="textColor" onclick="setTextColor('color12')"> Option 6
-        <span class="color-square" data-color="color12"></span>
-      </label>
-    </div>
-  </div>
-  
-  <div class="setting-container">
-     <div class="setting-header">Protanopia Red-Blind</div>
-    <div class="color-options">
-      <label class="color-option">
-        <span class="color-square" data-color="color1"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color1')"> Option 1
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color2"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color2')"> Option 2
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color3"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color3')"> Option 3
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color4"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color4')"> Option 4
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color5"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color5')"> Option 5
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color6"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color6')"> Option 6
-      </label>
-    </div>
-  </div>
-  
-  <div class="setting-container">
-     <div class="setting-header">Trianopia Blue-Blind</div>
-    <div class="color-options">
-      <label class="color-option">
-        <span class="color-square" data-color="color1"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color1')"> Option 1
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color2"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color2')"> Option 2
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color3"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color3')"> Option 3
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color4"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color4')"> Option 4
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color5"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color5')"> Option 5
-      </label>
-      <label class="color-option">
-        <span class="color-square" data-color="color6"></span>
-        <input type="radio" name="textColor" onclick="setTextColor('color6')"> Option 6
-      </label>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+
+  <script>
+    let isAscending = true; // Initial sort order
+    let kaaiData = [];
+
+    // Fetch JSON data
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        kaaiData = data; // Store fetched data
+        renderKaaiLinks(); // Render links with default sorting
+      })
+      .catch(error => console.error('Error fetching data:', error));
+
+    // Function to render kaainr links
+    function renderKaaiLinks() {
+      const container = document.getElementById('kaaiContainer');
+      container.innerHTML = ''; // Clear previous content
+
+      // Sort data based on current order
+      const sortedData = kaaiData.sort((a, b) => {
+        const comparison = parseInt(a.kaainr) - parseInt(b.kaainr);
+        return isAscending ? comparison : -comparison;
+      });
+
+      // Generate links
+      sortedData.forEach(entry => {
+        const { kaainr, geometry } = entry;
+        const [lon, lat] = geometry.geometry.coordinates;
+
+        // Create a div for each kaai
+        const kaaiDiv = document.createElement('div');
+        kaaiDiv.className = 'kaai';
+
+        // Add the kaai number as text
+        const kaaiTitle = document.createElement('div');
+        kaaiTitle.innerText = `Kaai ${kaainr}`;
+        kaaiDiv.appendChild(kaaiTitle);
+
+        // Button container
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
+
+        // Google Maps Button
+        const googleButton = document.createElement('button');
+        googleButton.innerText = 'Google Maps';
+        googleButton.onclick = () =>
+          window.open(`https://www.google.com/maps?q=${lat},${lon}`, '_blank');
+
+        // Apple Maps Button
+        const appleButton = document.createElement('button');
+        appleButton.innerText = 'Apple Maps';
+        appleButton.onclick = () =>
+          window.open(`https://maps.apple.com/?q=${lat},${lon}`, '_blank');
+
+        // Waze Button
+        const wazeButton = document.createElement('button');
+        wazeButton.innerText = 'Waze';
+        wazeButton.onclick = () =>
+          window.open(`https://www.waze.com/ul?ll=${lat},${lon}&navigate=yes`, '_blank');
+
+        // Append buttons to the button container
+        buttonContainer.appendChild(googleButton);
+        buttonContainer.appendChild(appleButton);
+        buttonContainer.appendChild(wazeButton);
+
+        // Append button container to kaai div
+        kaaiDiv.appendChild(buttonContainer);
+
+        // Append kaai div to the main container
+        container.appendChild(kaaiDiv);
+      });
+    }
+
+    // Toggle sort order on button click
+    document.getElementById('sortButton').addEventListener('click', () => {
+      isAscending = !isAscending; // Toggle sort order
+      renderKaaiLinks(); // Re-render links
+      document.getElementById('sortButton').innerText = isAscending
+        ? '9720-0'
+        : '0-9720'; // Update button text
+    });
+  </script>
 </body>
 </html>
